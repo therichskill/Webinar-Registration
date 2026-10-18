@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10152f" />
+  <title>Webinar Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Webinar home"><span class="brand-mark">W</span><span>WEBINAR</span></a>
+    <span class="live-label"><span class="live-dot"></span> LIVE WEBINAR</span>
+  </header>
+
+  <main id="home">
+    <div class="countdown" aria-label="Registration countdown">
+      <span>REGISTRATION COUNTDOWN - PER VISIT</span>
+      <strong id="countdown">34:43</strong>
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> APKA AGALA KADAM YAHAN SE</p>
+        <h1 id="hero-title">Seekhiye kuch<br />naya.<br /><span>Badhiye aage.</span></h1>
+        <p class="intro">Har live webinar ke liye apni jagah register karein. Details submit karte hi WhatsApp par registration confirm ho jayega.</p>
+        <div class="benefits"><span>✦&nbsp; Live session</span><span>✦&nbsp; Sabhi ke liye</span><span>✦&nbsp; WhatsApp par registration</span></div>
+        <div class="webinar-art" aria-hidden="true"><span class="sparkle">✦</span><div class="play-card"><span class="play">▶</span><span>LIVE<br />WEBINAR</span></div></div>
+      </div>
+
+      <section class="form-card" id="register" aria-labelledby="form-title">
+        <p class="refund-promise registration-refund-promise">If you don’t understand the work,<br /><span>your money will be returned.</span></p>
+        <div class="card-heading">
+          <div><p class="card-kicker">APNI JAGAH PAKKI KAREIN</p><h2 id="form-title">Webinar Registration</h2></div>
+          <span class="edit-icon" aria-hidden="true">↗</span>
+        </div>
+        <p class="form-subtitle">Neeche apni details bharein — aapko is process WhatsApp par hoga.</p>
+        <form id="registrationForm">
+          <label class="field"><span>Apka naam</span><input type="text" name="name" placeholder="Apna pura naam" autocomplete="name" required /></label>
+          <div class="field-row">
+            <label class="field"><span>Mobile number</span><input type="tel" name="phone" placeholder="10 digit number" autocomplete="tel" pattern="[0-9+() -]{10,}" required /></label>
+            <label class="field"><span>Age</span><input type="number" name="age" placeholder="Apki age" min="13" max="100" required /></label>
+          </div>
+          <label class="field"><span>Gmail / Email</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required /></label>
+          <p class="field-hint">Apna sahi email address dalein.</p>
+          <label class="field"><span>Apka profession</span><select name="profession" required><option value="" disabled selected>Apna profession select karein</option><option>Student</option><option>Working professional</option><option>Business owner</option><option>Freelancer</option><option>Other</option></select></label>
+          <button class="submit-button" type="submit">WhatsApp par register karein <span aria-hidden="true">→</span></button>
+          <p class="secure-note"><span aria-hidden="true">✦</span> Apki details sirf registration ke liye use hongi</p>
+          <p class="success-message" id="successMessage" role="status" hidden>Shukriya! Aapka registration submit ho gaya.</p>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

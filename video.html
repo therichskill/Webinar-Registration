@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10152f" />
+  <title>Your Webinar Video</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="journey-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Webinar home"><span class="brand-mark">W</span><span>WEBINAR</span></a>
+    <span class="live-label"><span class="live-dot"></span> YOUR NEXT STEP</span>
+  </header>
+  <main class="journey-main">
+    <section class="journey-card" aria-labelledby="video-title">
+      <p class="eyebrow journey-eyebrow"><span></span> A SPECIAL MESSAGE FOR YOU</p>
+      <h1 id="video-title" class="journey-title">Ek chhota sa video,<br /><span>ek bada badlav.</span></h1>
+      <p class="journey-intro">Yeh video aapke naye safar ki shuruaat ho sakta hai. Kuch minute dein — ho sakta hai aaj ka yeh faisla aapki soch badal de.</p>
+      <p class="video-prompt"><span aria-hidden="true">↓</span> SEE VIDEO BEFORE SLOT BOOKING</p>
+      <div class="video-frame">
+        <div class="video-player">
+          <img class="video-thumbnail" src="https://img.youtube.com/vi/tWH1_B8Jekk/hqdefault.jpg" alt="Webinar video thumbnail" />
+          <iframe id="journeyVideo" title="Webinar introduction video" src="about:blank" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen hidden></iframe>
+        </div>
+        <p class="video-note">.</p>
+      </div>
+      <div class="journey-actions">
+        <button class="glow-button watch-button" id="watchButton" type="button">▶&nbsp; Watch Video</button>
+        <button class="glow-button skip-button" id="skipButton" type="button">Skip Video and Book Your Slot&nbsp; →</button>
+      </div>
+      <p class="timer-note" id="timerNote" role="status"></p>
+      <div class="interest-actions" id="interestActions" hidden>
+        <p>Ab aapka kya faisla hai?</p>
+        <button class="glow-button interested-button" id="interestedButton" type="button">I'm Interested</button>
+        <button class="glow-button not-interested-button" id="notInterestedButton" type="button">I'm Not Interested</button>
+        <aside class="transparency-note" aria-label="Program and refund information">
+          <strong>Honest information</strong>
+          <p>We help members build practical earning skills. Earnings depend on individual effort and are guaranteed.</p>
+          <p>100% Refunds and cashback . In the shared example,.</p>
+        </aside>
+      </div>
+    </section>
+    <div class="confirmation-overlay" id="watchedModal" role="dialog" aria-modal="true" aria-labelledby="watchedQuestion" hidden>
+      <div class="confirmation-card">
+        <h2 id="watchedQuestion"><span lang="hi">क्या आपने पूरा वीडियो देख लिया है?</span><span lang="en">Have you watched the full video?</span></h2>
+        <div class="confirmation-actions">
+          <button class="glow-button" id="watchedNo" type="button">No</button>
+          <button class="glow-button" id="watchedYes" type="button">Yes</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="video.js"></script>
+</body>
+</html>
